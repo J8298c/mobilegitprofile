@@ -1,10 +1,8 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Homepage from './components/SplashPage';
+import { StackNavigator } from "react-navigation";
+import Homepage from "./components/Homepage";
 
-export default class App extends React.Component {
-  render() {
-    return <Homepage />;
-  }
-}
+const App = StackNavigator({
+	Home: { screen: Homepage }
+});
 
+export default App;

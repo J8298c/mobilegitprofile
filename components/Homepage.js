@@ -18,6 +18,7 @@ class Homepage extends Component {
           raised
           style={styles.buttonContainer}
           backgroundColor="#536DFE"
+          onPress={() => this.props.navigation.navigate("Login")}
         />
       </View>
     );

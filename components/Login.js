@@ -11,7 +11,7 @@ class Login extends Component {
 
 	render() {
 		return (
-			<View>
+			<View style={styles.formContainer}>
 				<View>
 					<FormLabel>Username</FormLabel>
 					<FormInput
@@ -44,6 +44,9 @@ const styles = {
 	buttonContainer: {
 		display: "flex",
 		backgroundColor: "#C5CAE9",
+		marginTop: 55
+	},
+	formContainer: {
 		marginTop: 55
 	}
 };
